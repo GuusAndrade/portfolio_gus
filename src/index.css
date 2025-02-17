@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "animate.css";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: aqua;
+}
+
+html {
+  scroll-behavior: smooth;
+}
