@@ -3,7 +3,7 @@ import Projetos from "./components/Projetos"
 import Contato from "./components/Contato"
 import Navbar from './components/Navbar'
 import React from 'react';
-import SocialLinks from './components/socialLinks';
+import SocialLinks from './components/SocialLinks';
 
 import './index.css';
 

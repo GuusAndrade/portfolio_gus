@@ -1,12 +1,16 @@
-FROM node:16-alpine
+
+FROM node:18-alpine
+
 WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
 
 COPY . .
 
-EXPOSE 5173
+RUN npm install
 
-CMD ["npm", "run", "preview"]
+RUN npm run build
+
+RUN npm install crypto --save
+
+EXPOSE 4173
+
+CMD ["npm", "run", "start"]
